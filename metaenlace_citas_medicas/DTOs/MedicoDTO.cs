@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace metaenlace_citas_medicas.DTOs
+{
+    public class MedicoDTO
+    {
+        public int userID { get; set; }
+
+        public string usuario { get; set; }
+
+        public string nombre { get; set; }
+
+        public string apellidos { get; set; }
+
+        public string clave { get; set; }
+
+        public string numColegiado { get; set; }
+
+        public IList<int> pacientesUserID { get; set; }
+
+        public IList<int> CitasCitaID { get; set; }
+    }
+}
